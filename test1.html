@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktioner i JS</title>
+</head>
+<body>
+    <p id="p1">Klicka här!</p>
+    <p id="p2">Klicka här!</p>
+    <p id="p3">Klicka här!</p>
+    <p id="p4">Klicka här!</p>
+    <p id="p5">Klicka här!</p>
+</body>
+<script>
+    document.getElementById("p1").addEventListener('click', clickP);
+    
+    function clickP(e){
+      e.currentTarget.innerText = "Test";
+    }
+
+    let sumFn = (a,b) => {
+        let s = a + b;
+        return s;
+    }
+
+    console.log(sumFn(5,4));
+</script>
+</html>
